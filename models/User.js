@@ -6,6 +6,9 @@ const userSchema = mongoose.Schema({
         type:String,
         
     },
+    aboutImage:{
+        type:String
+    },
     about: {
         type:String,
         
@@ -17,4 +20,4 @@ const userSchema = mongoose.Schema({
     
 })
 
-module.exports = mongoose.model("Service",userSchema);
+module.exports = mongoose.model("User",userSchema);

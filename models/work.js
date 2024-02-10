@@ -1,27 +1,26 @@
 const mongoose = require("mongoose");
 
-const projectSchema = mongoose.Schema({
-    thumbnail: {
+const workSchema = mongoose.Schema({
+    logo: {
         type:String,
         required:true
     },
-    title: {
+    companyName:{
         type:String,
         required:true
     },
-    description: {
+    role:{
         type:String,
         required:true
     },
-    github: {
+    start:{
         type:String,
         required:true
-    }
-    ,
-    url: {
+    },
+    end:{
         type:String,
         required:true
     }
 })
 
-module.exports = mongoose.model("Project",projectSchema);
+module.exports = mongoose.model("Work",workSchema);

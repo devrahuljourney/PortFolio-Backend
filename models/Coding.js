@@ -12,7 +12,7 @@ const codingSchema = mongoose.Schema({
     },
     icon: {
         type:String,
-        required:true
+        
     },
     link:{
         type:String,

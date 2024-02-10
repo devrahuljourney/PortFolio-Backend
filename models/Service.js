@@ -12,7 +12,7 @@ const serviceSchema = mongoose.Schema({
     },
     icon: {
         type:String,
-        required:true
+        
     }
     
 })
